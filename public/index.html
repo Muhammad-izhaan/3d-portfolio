@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Izhan | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./js/three.module.js",
+                "three/examples/jsm/controls/OrbitControls": "./js/OrbitControls.js",
+                "three/examples/jsm/postprocessing/EffectComposer": "./js/EffectComposer.js",
+                "three/examples/jsm/postprocessing/RenderPass": "./js/RenderPass.js",
+                "three/examples/jsm/postprocessing/UnrealBloomPass": "./js/UnrealBloomPass.js",
+                "three/examples/jsm/postprocessing/GlitchPass": "./js/GlitchPass.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <canvas class="webgl"></canvas>
+
+    <nav class="hover-card">
+        <ul>
+            <li><a href="#home" class="glitch-effect" data-text="Home">Home</a></li>
+            <li><a href="#about" class="glitch-effect" data-text="About">About</a></li>
+            <li><a href="#projects" class="glitch-effect" data-text="Projects">Projects</a></li>
+            <li><a href="#contact" class="glitch-effect" data-text="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-effect" data-text="Muhammad Izhan">Muhammad Izhan</h1>
+            <p class="neon-text">Software Developer & Creative Technologist</p>
+            <div class="cyber-badge">
+                <span class="badge-text">Status: Online</span>
+                <div class="badge-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-content">
+            <div class="hover-card glass">
+                <h2 class="glitch-effect" data-text="About Me">About Me</h2>
+                <p class="cyber-text">I'm a passionate software developer with expertise in creating immersive digital experiences. My work combines cutting-edge technology with creative design to build unique and engaging applications.</p>
+                <div class="skills">
+                    <div class="skill-item hover-card">JavaScript</div>
+                    <div class="skill-item hover-card">Three.js</div>
+                    <div class="skill-item hover-card">React</div>
+                    <div class="skill-item hover-card">Node.js</div>
+                    <div class="skill-item hover-card">Python</div>
+                    <div class="skill-item hover-card">WebGL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-content">
+            <h2 class="glitch-effect" data-text="Projects">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card hover-card glass">
+                    <div class="card-header">
+                        <h3 class="glitch-effect" data-text="Project 1">Project 1</h3>
+                        <div class="tech-status">Status: Deployed</div>
+                    </div>
+                    <p>A cutting-edge web application built with modern technologies.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="cyber-button">View Project</a>
+                        <a href="#" class="cyber-button">Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card hover-card glass">
+                    <div class="card-header">
+                        <h3 class="glitch-effect" data-text="Project 2">Project 2</h3>
+                        <div class="tech-status">Status: Active</div>
+                    </div>
+                    <p>Interactive 3D visualization using WebGL and Three.js.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Three.js</span>
+                        <span class="tech-badge">WebGL</span>
+                        <span class="tech-badge">GLSL</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="cyber-button">View Project</a>
+                        <a href="#" class="cyber-button">Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card hover-card glass">
+                    <div class="card-header">
+                        <h3 class="glitch-effect" data-text="Project 3">Project 3</h3>
+                        <div class="tech-status">Status: In Development</div>
+                    </div>
+                    <p>Real-time data processing and visualization platform.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">WebSocket</span>
+                        <span class="tech-badge">D3.js</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="cyber-button">View Project</a>
+                        <a href="#" class="cyber-button">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2 class="glitch-effect" data-text="Contact">Contact</h2>
+            <form class="contact-form hover-card glass">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <div class="cyber-line"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <div class="cyber-line"></div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <div class="cyber-line"></div>
+                </div>
+                <button type="submit" class="cyber-button">
+                    <span class="button-text">Send Message</span>
+                    <span class="button-glitch"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+    <script>
+        // Sound effects
+        const hoverSound = new Audio('sounds/hover.mp3');
+        const clickSound = new Audio('sounds/click.mp3');
+        
+        // Add hover sound to all interactive elements
+        document.querySelectorAll('a, button, .project-card, .skill-item').forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                hoverSound.currentTime = 0;
+                hoverSound.play();
+            });
+            
+            element.addEventListener('click', () => {
+                clickSound.currentTime = 0;
+                clickSound.play();
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
